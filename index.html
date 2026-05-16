@@ -2,70 +2,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chat Online!">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ifbw.uk/dwayne">
-    <meta property="og:title" content="Online Chatroom">
-    <meta property="og:description" content="Chat Online!">
     <title>Chat Online!</title>
     <style>
-        html {
+        html, body {
             background-color: rgba(23,23,23,1.0);
+            margin: 0;
+            padding: 0;
         }
-p {
-    display: block;
-    color: maroon;
-    font-size: 100px;
-    margin: auto;
-    margin-top: 20px;
-    width: fit-content;
-}
-        .img1 img{
+        p {
             display: block;
+            color: maroon;
+            font-size: 100px;
+            margin: auto;
+            margin-top: 20px;
+            width: fit-content;
+        }
+        .layout {
+            position: relative;
+            width: 100%;
+            min-height: 800px;
+        }
+        .img1 img {
             width: 350px;
             max-width: 45vw;
             border-radius: 10%;
             border: 2px solid var(--border);
             filter: grayscale(15%);
-            transform: scale(1.2);
+            transform: scale(1.1);
             transition: border-color 0.3s, transform 0.3s;
-            margin:auto;
-            margin-top: 50px
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
-         .img1 img:hover {
+        .img1 img:hover {
             border-color: rgba(255,255,255,0.3);
-            transform: scale(1.23);
+            transform: translateX(-50%) scale(1.15);
         }
-                 .img2 img:hover {
-            border-color: rgba(255,255,255,0.3);
-            transform: scale(1.23);
-        }
-        .img2 img{
-            display: block;
-            width: 250px;
+        .img2 img {
+            width: 300px;
             max-width: 45vw;
             border-radius: 10%;
             border: 2px solid var(--border);
             filter: grayscale(15%);
-            transform: scale(1.2);
+            transform: scale(1.1);
             transition: border-color 0.3s, transform 0.3s;
-            margin:auto;
-            margin-top: 60px
+            position: absolute;
+            top: 320px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .img2 img:hover {
+            border-color: rgba(255,255,255,0.3);
+            transform: translateX(-50%) scale(1.15);
+        }
+        .img3 img {
+            width: 300px;
+            max-width: 45vw;
+            border-radius: 10%;
+            border: 2px solid var(--border);
+            transform: scale(1.1);
+            filter: grayscale(15%);
+            transition: border-color 0.3s, transform 0.3s;
+            position: absolute;
+            top: 450px;
+            left: 592px;
+        }
+        .img3 img:hover {
+            border-color: rgba(255,255,255,0.3);
+            transform: scale(1.25);
+        }
+                .img4 img {
+            width: 300px;
+            max-width: 45vw;
+            border-radius: 10%;
+            border: 2px solid var(--border);
+            transform: scale(1.1);
+            filter: grayscale(15%);
+            transition: border-color 0.3s, transform 0.3s;
+            position: absolute;
+            top: 140px;
+            right: 100px;
+        }
+        .img4 img:hover {
+            border-color: rgba(255,255,255,0.3);
+            transform: scale(1.25);
         }
     </style>
+    </style>
 </head>
-
 <body>
-     <audio autoplay>
-  <source src="music.mp3" type="audio/mpeg">
-</audio> 
-    <p>WE KNOW WHAT YOU DID</p>
-    <div class="img1">
-    <img src="https://cdn.discordapp.com/attachments/1504989603587821752/1505204566117978262/kidsflash.png?ex=6a09c67d&is=6a0874fd&hm=3f099b51696e860968a513ce7f65fdea5cbd892b017268dbf45dc4c5116384b5&" >
-    </div>
-    <br>
-    <br>
-    <div class="img2">
-    <img src="https://cdn.discordapp.com/attachments/1504989603587821752/1505163667526647828/Screenshot_20260515-201434_Discord.png?ex=6a09a066&is=6a084ee6&hm=d717f97b3fd40d186a40ba591572055a60ed4aedd68f39a60c7db9773e2f0f56&">
+    <audio autoplay>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    <p>WE KNOW WHAT YOU DID, ARIANA CRUZ</p>
+    <div class="layout">
+        <div class="img1">
+            <img src="https://cdn.discordapp.com/attachments/1504989603587821752/1505204566117978262/kidsflash.png?ex=6a09c67d&is=6a0874fd&hm=3f099b51696e860968a513ce7f65fdea5cbd892b017268dbf45dc4c5116384b5&">
+        </div>
+        <div class="img2">
+            <img src="https://cdn.discordapp.com/attachments/1504989603587821752/1505163667526647828/Screenshot_20260515-201434_Discord.png?ex=6a09a066&is=6a084ee6&hm=d717f97b3fd40d186a40ba591572055a60ed4aedd68f39a60c7db9773e2f0f56&">
+        </div>
+        <div class="img3">
+            <img src="https://cdn.discordapp.com/attachments/1368620194359935030/1505230942137225286/IMG_4008.png?ex=6a09df0e&is=6a088d8e&hm=6ecea852ddb7c88e7de328a24395993c69609e5d7aee34c713862e161fbf8c50&">
+        </div>
+        <div class="img4">
+            <img src="https://cdn.discordapp.com/attachments/1504989603587821752/1505064030862315520/Screenshot_20260516-002650_Discord.png?ex=6a09439b&is=6a07f21b&hm=5187558862ecfbf3cf0d8222d887d06fc6550034095390673b06db92285a158c&">
+        </div>
     </div>
 </body>
+</html>
